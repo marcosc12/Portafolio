@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">PORTAFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="menuInicio">Inicio</a></li>
+                <li><a href="contacto.html" id="menuContacto">Contacto</a></li>
+                <li s="language" id="languageToggle">ES</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="horizontal-container">
+        <div class="text-column">
+            <div class="content-card">
+                <div class="header">
+                    <div class="title" id="title">Desarrollador Web</div>
+                    <div class="subtitle" id="subtitle">Backend</div>
+                    <div class="name" id="name">SOBRE MI</div>
+                </div>
+                
+                <p class="description" id="description">
+                    Soy Marcos, un desarrollador Backend con conocimiento en la creación de aplicaciones web. Me he enfocado en aprender sobre la lógica del servidor, el manejo de bases de datos y las buenas prácticas de desarrollo.
+                </p>
+                
+                <div class="buttons">
+                    <a href="contacto.html"><button class="btn btn-contact" id="btn-contact">Contacto</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-column">
+            <img class="computer-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Computadora de desarrollo">
+        </div>
+    </div>
+
+    <center>
+        <p id="conocimiento">¡Conocimiento!</p>
+
+        <div class="grid-container">
+            <div class="box">
+                <div class="icon">✨</div>
+                <h2 id="habilidadesBlandas">HABILIDADES BLANDAS</h2>
+                <p id="habilidad1">Trabajo en equipo.</p>
+                <p id="habilidad2">Comunicación efectiva para capacitación técnica.</p>
+                <p id="habilidad3">Resolución creativa de problemas y adaptabilidad a nuevas tecnologías.</p>
+            </div>
+            <div class="box">
+                <div class="icon">📱</div>
+                <h2 id="habilidadesTecnicas">HABILIDADES TÉCNICAS</h2>
+                <p id="tecnica1">Lenguajes de Programación: Java, Python, JavaScript, C#, PHP, .NET</p>
+                <p id="tecnica2">Frameworks: Vue.js, Spring Boot, Django</p>
+                <p id="tecnica3">Frontend: HTML, CSS, Bootstrap, React.</p>
+                <p id="tecnica4">Backend: PHP, ASP.NET, Node.js.</p>
+                <p id="tecnica5">Bases de Datos: SQL, MySQL.</p>
+                <p id="tecnica6">Herramientas: Git, GitHub, Docker.</p>
+                <p id="tecnica7">Metodologías: Scrum, Kanban.</p>
+            </div>
+        </div>
+
+        <p id="proyectos">¡Proyectos Personales!</p>
+
+        <div class="grid-container">
+            <div class="box">
+                <center>
+                    <h2 id="proyecto1">Sistema de Gestión de eventos</h2>
+                    <img src="salon.jpeg" alt="Ver video" style="width:300px; height:auto; display:block; margin-bottom:10px; gap: 30px;">
+                    <a class="boton-drive" href="https://drive.google.com/file/d/1U9aJ9fKLestgzRvc1Ys43pPvuRuPI_qD/view?usp=sharing" target="_blank">
+                        <span id="btn-proyecto1">Ver video en Google Drive</span>
+                    </a>
+                    <br><br>
+                    <p id="tecnologias1">Tecnologías: HTML, JavaScript, CSS, PHP, MySQL.</p>
+                </center>
+            </div>
+
+            <div class="box">
+                <center>
+                    <h2 id="proyecto2">Control de Inventario</h2>
+                    <img src="foto2.jpeg" alt="Ver video" style="width:300px; height:auto; display:block; margin-bottom:10px;">
+                    <a class="boton-drive" href="https://drive.google.com/file/d/1VmtZ3IZjCKxEiGKjcwWHHgdpMYHwtejo/view?usp=sharing" target="_blank">
+                        <span id="btn-proyecto2">Ver video en Google Drive</span>
+                    </a>
+                    <br><br>
+                    <p id="tecnologias2">Tecnologías: HTML, JavaScript, CSS, PHP, MySQL.</p>
+                </center>
+            </div>
+        </div>
+    </center>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageToggle = document.getElementById('languageToggle');
+            
+            // Textos en ambos idiomas
+            const texts = {
+                es: {
+                    logo: "PORTAFOLIO",
+                    menuInicio: "Inicio",
+                    menuContacto: "Contacto",
+                    language: "ES",
+                    title: "Desarrollador Web",
+                    subtitle: "Backend",
+                    name: "SOBRE MI",
+                    description: "Soy Marcos, un desarrollador Backend con conocimiento en la creación de aplicaciones web. Me he enfocado en aprender sobre la lógica del servidor, el manejo de bases de datos y las buenas prácticas de desarrollo.",
+                    btnContact: "Contacto",
+                    conocimiento: "¡Conocimiento!",
+                    habilidadesBlandas: "HABILIDADES BLANDAS",
+                    habilidad1: "Trabajo en equipo.",
+                    habilidad2: "Comunicación efectiva para capacitación técnica.",
+                    habilidad3: "Resolución creativa de problemas y adaptabilidad a nuevas tecnologías.",
+                    habilidadesTecnicas: "HABILIDADES TÉCNICAS",
+                    tecnica1: "Lenguajes de Programación: Java, Python, JavaScript, C#, PHP, .NET",
+                    tecnica2: "Frameworks: Vue.js, Spring Boot, Django",
+                    tecnica3: "Frontend: HTML, CSS, Bootstrap, React.",
+                    tecnica4: "Backend: PHP, ASP.NET, Node.js.",
+                    tecnica5: "Bases de Datos: SQL, MySQL.",
+                    tecnica6: "Herramientas: Git, GitHub, Docker.",
+                    tecnica7: "Metodologías: Scrum, Kanban.",
+                    proyectos: "¡Proyectos Personales!",
+                    proyecto1: "Sistema de Gestión de eventos",
+                    proyecto2: "Control de Inventario",
+                    btnProyecto1: "Ver video en Google Drive",
+                    btnProyecto2: "Ver video en Google Drive",
+                    tecnologias1: "Tecnologías: HTML, JavaScript, CSS, PHP, MySQL.",
+                    tecnologias2: "Tecnologías: HTML, JavaScript, CSS, PHP, MySQL."
+                },
+                en: {
+                    logo: "PORTFOLIO",
+                    menuInicio: "Home",
+                    menuContacto: "Contact",
+                    language: "EN",
+                    title: "Web Developer",
+                    subtitle: "Backend",
+                    name: "ABOUT ME",
+                    description: "I'm Marcos, a Backend developer with knowledge in web application development. I've focused on learning about server logic, database management and development best practices.",
+                    btnContact: "Contact",
+                    conocimiento: "Knowledge!",
+                    habilidadesBlandas: "SOFT SKILLS",
+                    habilidad1: "Teamwork.",
+                    habilidad2: "Effective communication for technical training.",
+                    habilidad3: "Creative problem solving and adaptability to new technologies.",
+                    habilidadesTecnicas: "TECHNICAL SKILLS",
+                    tecnica1: "Programming Languages: Java, Python, JavaScript, C#, PHP, .NET",
+                    tecnica2: "Frameworks: Vue.js, Spring Boot, Django",
+                    tecnica3: "Frontend: HTML, CSS, Bootstrap, React.",
+                    tecnica4: "Backend: PHP, ASP.NET, Node.js.",
+                    tecnica5: "Databases: SQL, MySQL.",
+                    tecnica6: "Tools: Git, GitHub, Docker.",
+                    tecnica7: "Methodologies: Scrum, Kanban.",
+                    proyectos: "Personal Projects!",
+                    proyecto1: "Event Management System",
+                    proyecto2: "Inventory Control",
+                    btnProyecto1: "View video on Google Drive",
+                    btnProyecto2: "View video on Google Drive",
+                    tecnologias1: "Technologies: HTML, JavaScript, CSS, PHP, MySQL.",
+                    tecnologias2: "Technologies: HTML, JavaScript, CSS, PHP, MySQL."
+                }
+            };
+            
+            let currentLanguage = 'es';
+            
+            function changeLanguage() {
+                currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+                updateTexts();
+            }
+            
+            function updateTexts() {
+                // Actualiza todos los textos según el idioma seleccionado
+                for (const [key, value] of Object.entries(texts[currentLanguage])) {
+                    const element = document.getElementById(key);
+                    if (element) {
+                        element.textContent = value;
+                    }
+                }
+            }
+            
+            languageToggle.addEventListener('click', changeLanguage);
+        });
+    </script>
+</body>
+</html>
